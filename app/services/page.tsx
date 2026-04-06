@@ -114,14 +114,12 @@ export default function Services() {
               </p>
             </div>
             <div className="flex flex-wrap gap-4">
-              <a
-                href="https://www.dmcut.ca/prendre-rendez-vous"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/rdv"
                 className="inline-block bg-white text-[#002d1c] px-10 py-5 rounded-xl font-black text-lg hover:scale-105 active:scale-95 transition-all shadow-xl whitespace-nowrap"
               >
                 Prendre rendez-vous →
-              </a>
+              </Link>
               <Link
                 href="/contact"
                 className="inline-block border-2 border-[#95d4b3]/40 text-[#95d4b3] px-10 py-5 rounded-xl font-bold text-lg hover:border-white hover:text-white transition-all whitespace-nowrap"

@@ -338,14 +338,12 @@ export default function Home() {
                 Ou appelle le (450) 578-4158
               </a>
             </div>
-            <a
-              href="https://www.dmcut.ca/prendre-rendez-vous"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/rdv"
               className="relative z-10 bg-white text-[#002d1c] px-10 py-5 rounded-xl font-black text-lg hover:scale-105 active:scale-95 transition-all shadow-2xl whitespace-nowrap flex-shrink-0"
             >
               Book maintenant →
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const infoCards = [
   {
     label: "Adresse",
@@ -220,14 +222,12 @@ export default function Contact() {
 
             <div className="mt-8 pt-6 border-t border-[#e7e8e9] text-center">
               <p className="text-[#4e635a] text-sm mb-4">Ou directement par rendez-vous :</p>
-              <a
-                href="https://www.dmcut.ca/prendre-rendez-vous"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/rdv"
                 className="inline-block border-2 border-[#002d1c] text-[#002d1c] px-8 py-3 rounded-xl font-bold hover:bg-[#002d1c] hover:text-white transition-all duration-300 text-sm"
               >
                 Prendre rendez-vous en ligne
-              </a>
+              </Link>
             </div>
           </div>
         </div>

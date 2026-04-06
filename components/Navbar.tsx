@@ -103,15 +103,13 @@ export default function Navbar() {
           </div>
 
           {/* Desktop CTA */}
-          <a
-            href="https://www.dmcut.ca/prendre-rendez-vous"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/rdv"
             className="hidden md:block bg-[#002d1c] text-white px-6 py-2.5 rounded-lg text-sm font-bold hover:opacity-80 transition-all duration-300 active:scale-95"
             style={{ fontFamily: "var(--font-headline)" }}
           >
             Prendre Rendez-vous
-          </a>
+          </Link>
 
           {/* Mobile toggle */}
           <button
@@ -149,24 +147,20 @@ export default function Navbar() {
               </Link>
             ))}
             <div className="pt-4 border-t border-[#002d1c]/5">
-              <a
-                href="https://www.dmcut.ca/prendre-rendez-vous"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/rdv"
                 className="block w-full text-center bg-[#002d1c] text-white py-3.5 rounded-xl text-sm font-black hover:opacity-80 transition-opacity"
               >
                 Prendre Rendez-vous
-              </a>
+              </Link>
             </div>
           </div>
         )}
       </nav>
 
       {/* ── Floating CTA (mobile + desktop) ────────────────── */}
-      <a
-        href="https://www.dmcut.ca/prendre-rendez-vous"
-        target="_blank"
-        rel="noopener noreferrer"
+      <Link
+        href="/rdv"
         className={`fixed bottom-6 right-6 z-40 flex items-center gap-2 bg-[#002d1c] text-white px-5 py-3.5 rounded-full font-black text-sm shadow-2xl shadow-[#002d1c]/40 hover:scale-105 active:scale-95 transition-all duration-300 ${
           showFloat ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
         }`}
@@ -176,7 +170,7 @@ export default function Navbar() {
           <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
         </svg>
         <span>Réserver</span>
-      </a>
+      </Link>
     </>
   );
 }

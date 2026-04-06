@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const images = [
   { src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDbHmezi3dHeBbSz04QVqT0gfqqyU5XoRhlXwCHYXSMPTVMWsjxLDr4MROv32QtYKbS639wF-rLsveO8XkHRKIboWh56RVZ6vUFWWxGlItPagh3-lTFogutKR55bDHKKyLqPai8xYSc422Nk7YqWWznnxLLlUEgborGf8YwsZ9316XxU0Bmts3uUdyldAkv0XmNs1-3w0EVWFFZhTXKlTJEK4_s4YSCVfvJlnUVrgUqC6Z_8vnvgZ7kW4-Fsc4awc4PuFg8QVCyM2g", alt: "Skin fade précis", cols: 2, rows: 2 },
@@ -101,14 +102,12 @@ export default function Galerie() {
       {/* RDV CTA */}
       <section className="py-16 px-6 md:px-8 bg-white text-center">
         <p className="text-[#4e635a] mb-4 text-lg">Inspiré par nos coupes ?</p>
-        <a
-          href="https://www.dmcut.ca/prendre-rendez-vous"
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          href="/rdv"
           className="inline-block bg-[#002d1c] text-white px-10 py-4 rounded-xl font-bold text-lg hover:opacity-90 transition-opacity"
         >
           Prendre rendez-vous →
-        </a>
+        </Link>
       </section>
     </>
   );

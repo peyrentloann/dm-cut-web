@@ -95,14 +95,12 @@ export default function VideoHero() {
 
         {/* CTA buttons */}
         <div className="hero-cta flex flex-wrap gap-4 justify-center mb-16">
-          <a
-            href="https://www.dmcut.ca/prendre-rendez-vous"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/rdv"
             className="bg-white text-[#002d1c] px-8 py-4 rounded-xl font-black text-base hover:scale-105 active:scale-95 transition-all shadow-2xl shadow-black/30"
           >
             Prendre rendez-vous →
-          </a>
+          </Link>
           <Link
             href="/services"
             className="border-2 border-white/40 text-white px-8 py-4 rounded-xl font-bold text-base hover:bg-white/10 hover:border-white/60 transition-all backdrop-blur-sm"
