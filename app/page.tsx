@@ -260,7 +260,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── 6. À propos ────────────────────────────────────── */}
+      {/* ── 7. À propos ────────────────────────────────────── */}
       <section className="py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
           <div className="relative reveal">
